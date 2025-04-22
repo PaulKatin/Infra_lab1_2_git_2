@@ -25,6 +25,21 @@ namespace Infra_lab1_2_git_2
             Console.WriteLine("Updated Employee Details:");
             emp.DisplayInfo();
 
+            // Create an Employee object
+            Employee emp2 = new Employee("Toni Johnson", 70000);
+
+            // Display initial details
+            Console.WriteLine("Initial Employee Details:");
+            emp2.DisplayInfo();
+
+            
+            // Display updated details
+            Console.WriteLine("Updated Employee Details:");
+            emp2.DisplayInfo();
+
+
+
+
         }
 
     }

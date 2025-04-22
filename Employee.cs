@@ -55,8 +55,22 @@ namespace Infra_lab1_2_git_2
                 Salary += Salary * (percentage / 100);
             }
 
-            // Method to display employee details
-            public void DisplayInfo()
+
+
+
+        // Method to increase salary by a percentage
+        public void IncreaseSalaryAbs(decimal abs)
+        {
+            if (abs < 0)
+            {
+                Console.WriteLine("Percentage cannot be negative.");
+                return;
+            }
+            Salary += abs;
+        }
+
+        // Method to display employee details
+        public void DisplayInfo()
             {
                 Console.WriteLine($"Name: {Name}, Salary: {Salary:C}");
             }
